@@ -1,3 +1,6 @@
+""" Class representing a client """
+
+
 class Client:
     """ Class representing a client """
 
@@ -22,8 +25,6 @@ class Client:
 
         if p_index >= len(self.preexistence):
             return 'There is no such preexistence'
-        else:
-            return self.preexistence[p_index]
 
     def get_all_preexistence(self):
         """ get all preexistence from a client """
