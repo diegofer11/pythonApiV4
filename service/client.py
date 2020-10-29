@@ -1,8 +1,5 @@
-""" Class representing a client
-    """
-
-
 class Client:
+    """ Class representing a client """
 
     def __init__(
         self,
@@ -16,6 +13,7 @@ class Client:
         self.preexistence = []
 
     def add_preexistence(self, n_preexistence):
+        """ add preexistance to a client """
         self.preexistence.append(n_preexistence)
         return len(self.preexistence) - 1
 
@@ -28,13 +26,16 @@ class Client:
             return self.preexistence[p_index]
 
     def get_all_preexistence(self):
+        """ get all preexistence from a client """
         return self.preexistence
 
     def remove_preexistence(self, n_preexistence):
+        """ remove preexistence from index """
         self.preexistence.pop(n_preexistence)
         return len(self.preexistence) - 1
 
     def get_formatted_name(self):
+        """ return formated client name """
         return self.name + ' ' + self.last_name
 
 
