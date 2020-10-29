@@ -1,8 +1,15 @@
 """ Class representing a client
     """
-class Client():
 
-    def __init__(self, name, last_name, doc_id):
+
+class Client:
+
+    def __init__(
+        self,
+        name,
+        last_name,
+        doc_id,
+        ):
         self.name = name
         self.last_name = last_name
         self.doc_id = doc_id
@@ -14,6 +21,7 @@ class Client():
 
     def get_preexistence(self, p_index):
         """ get a preexiste given an index """
+
         if p_index >= len(self.preexistence):
             return 'There is no such preexistence'
         else:
@@ -32,4 +40,5 @@ class Client():
 
 if __name__ == '__main__':
     client_instance = Client('uno', 'dos', '113565')
-    print('User Abbas has been added with id ', client_instance.get_formatted_name())
+    print ('User Abbas has been added with id ',
+           client_instance.get_formatted_name())
