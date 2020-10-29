@@ -23,7 +23,7 @@ class Client:
     def get_preexistence(self, p_index):
         """ get a preexiste given an index """
         if p_index >= len(self.preexistence):
-            return 'There is no such preexistence'
+            return 0
 
     def get_all_preexistence(self):
         """ get all preexistence from a client """
